@@ -4,5 +4,14 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:FourfoldFeathersPower": {
+    "NAME": "Fourfold Feathers",
+    "DESCRIPTIONS": [
+      "You have ",
+      " #yFourfold #yFeather.",
+      " #yFourfold #yFeathers.",
+      "I have too many #rFourfold #rFeathers!"
+    ]
   }
 }

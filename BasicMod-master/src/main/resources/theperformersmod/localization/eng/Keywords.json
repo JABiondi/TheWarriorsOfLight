@@ -19,5 +19,23 @@
       "multiword_keywords"
     ],
     "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "id": "fourfold_feathers",
+    "PROPER_NAME": "Fourfold Feathers",
+    "NAMES": [
+      "fourfold feather",
+      "fourfold_feather",
+      "fourfold_feathers"
+    ],
+    "DESCRIPTION": "#yFourfold #yFeathers are used to play certain cards. You can have up to #b4 at once."
+  },
+  {
+    "id": "fourfold",
+    "PROPER_NAME": "Fourfold",
+    "NAMES": [
+      "fourfold"
+    ],
+    "DESCRIPTION": "You need a #yFourfold #yFeather to play this card."
   }
 ]
