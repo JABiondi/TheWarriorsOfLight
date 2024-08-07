@@ -30,10 +30,10 @@ public class SoulOfTheDancer extends BaseRelic {
         super.onUseCard(targetCard, useCardAction);
         // if chance is 60%, (.6) then number has to be greater than .4
         if (targetCard.type == AbstractCard.CardType.ATTACK) {
-            if (RANDOM.random(0, 1) > (1. - CHANCE)) {
+            if (RANDOM.random((float)0.0, (float)1.0) > (1. - CHANCE)) {
                 flash();
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FourfoldFeathersPower(AbstractDungeon.player, NUM_FEATHERS)));
+                addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FourfoldFeathersPower(AbstractDungeon.player, NUM_FEATHERS), NUM_FEATHERS));
             }
         }
     }

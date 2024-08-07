@@ -16,27 +16,34 @@ public class FourfoldFeathersPower extends BasePower{
     //For a power to actually decrease/go away on its own they do it themselves.
     //Look at powers that do this like VulnerablePower and DoubleTapPower.
 
+    private static final int MAX_STACKS = 4;
+
     public FourfoldFeathersPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-        if (this.amount > 4) {
-            this.amount = 4;
+        if (this.amount > MAX_STACKS) {
+            this.amount = MAX_STACKS;
             addToBot(new TalkAction(true, this.DESCRIPTIONS[3], 1.0F, 2.0F));
         }
 
         this.canGoNegative = false;
     }
 
+    @Override
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        super.onApplyPower(power, target, source);
+
+    }
 
     @Override
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
-        this.fontScale = 8.0F;
-        this.amount += stackAmount;
+//        this.fontScale = 8.0F;
+//        this.amount += stackAmount;
         if (this.amount == 0){
             addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
-        if (this.amount > 4){
-            this.amount = 4;
+        if (this.amount > MAX_STACKS){
+            this.amount = MAX_STACKS;
         }
     }
 

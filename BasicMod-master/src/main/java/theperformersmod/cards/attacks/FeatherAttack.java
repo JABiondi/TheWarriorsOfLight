@@ -42,7 +42,7 @@ public class FeatherAttack extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         //addToBot method adds given action to bottom of action queue
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new ApplyPowerAction(p, p, new FourfoldFeathersPower(p, magicNumber), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new FourfoldFeathersPower(p, magicNumber)));
                 {
             //new DamageAction is an action that deals damage
             //First arg: Target to deal dmg to, will be 'm'
