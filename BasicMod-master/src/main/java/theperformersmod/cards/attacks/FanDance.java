@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theperformersmod.cards.BaseCard;
+import theperformersmod.cards.CustomTags;
 import theperformersmod.character.ThePerformers;
 import theperformersmod.powers.FourfoldFeathersPower;
 import theperformersmod.util.CardStats;
@@ -35,6 +36,8 @@ public class FanDance extends BaseCard {
 
         setDamage(DAMAGE, UPG_DAMAGE);
         // setMagic(MAGIC_NUMBER);
+
+        tags.add(CustomTags.FOURFOLD);
 
     }
 

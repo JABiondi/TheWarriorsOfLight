@@ -23,10 +23,14 @@
   },
   "${modID}:FanDance": {
   "NAME": "Fan Dance",
-  "DESCRIPTION": "${modID}:Fourfold. NL Deal !D! damage."
+  "DESCRIPTION": "${modID}:Fourfold. NL Deal !D! damage.",
+  "EXTENDED_DESCRIPTION": [
+    "I need at least #r1 #rFourfold #rFeather!"
+  ]
   },
   "${modID}:FeatherAttack": {
     "NAME": "Feather Attack",
     "DESCRIPTION": "Deal !D! damage. NL Gain a ${modID}:Fourfold_Feather."
+
   }
 }

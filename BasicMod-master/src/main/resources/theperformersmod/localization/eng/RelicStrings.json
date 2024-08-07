@@ -10,7 +10,7 @@
     "NAME": "Soul Of The Dancer",
     "FLAVOR": "Upon the surface of this multi-aspected crystal are carved the myriad deeds of dancers from eras past.",
     "DESCRIPTIONS": [
-      "Playing an attack will give you #b",
+      "Playing an attack that is NOT #y${modID}:Fourfold will give you #b",
       " #y${modID}:Fourfold_Feather 33% of the time."
     ]
   }

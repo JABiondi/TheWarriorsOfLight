@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.random.Random;
+import theperformersmod.cards.CustomTags;
 import theperformersmod.character.ThePerformers;
 import theperformersmod.powers.FourfoldFeathersPower;
 
@@ -29,7 +30,7 @@ public class SoulOfTheDancer extends BaseRelic {
     public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
         super.onUseCard(targetCard, useCardAction);
         // if chance is 60%, (.6) then number has to be greater than .4
-        if (targetCard.type == AbstractCard.CardType.ATTACK) {
+        if (targetCard.type == AbstractCard.CardType.ATTACK && !targetCard.hasTag(CustomTags.FOURFOLD)) {
             if (RANDOM.random((float)0.0, (float)1.0) > (1. - CHANCE)) {
                 flash();
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));

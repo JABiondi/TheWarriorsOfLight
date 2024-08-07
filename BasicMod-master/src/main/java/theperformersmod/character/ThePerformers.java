@@ -88,7 +88,7 @@ public class ThePerformers extends CustomPlayer {
     //In-game images
     private static final String SHOULDER_1 = characterPath("shoulder.png"); //Shoulder 1 and 2 are used at rest sites.
     private static final String SHOULDER_2 = characterPath("shoulder2.png");
-    private static final String CORPSE = characterPath("PerformersCorpsePlaceholder.png"); //Corpse is when you die.
+    private static final String CORPSE = characterPath("ThePerformersCorpseDNCBRD.png"); //Corpse is when you die.
 
     //Textures used for the energy orb
     private static final String[] orbTextures = {
@@ -145,7 +145,7 @@ public class ThePerformers extends CustomPlayer {
                     }
                 });
 
-        initializeClass(characterPath("ThePerformersPlaceholderImg.png"),
+        initializeClass(characterPath("ThePerformersDNCDRG.png"),
                 SHOULDER_2,
                 SHOULDER_1,
                 CORPSE,
